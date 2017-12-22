@@ -117,7 +117,7 @@ export default {
         },
         getAreaInfo(){
             let that=this;
-            $.getJSON('//ogmy9zsil.bkt.clouddn.com/json/areaV1.json',res=>{   
+            $.getJSON('http://ogmy9zsil.bkt.clouddn.com/json/areaV1.json',res=>{   
                 that.all=res;
                 that.initComByPCA();
             })
