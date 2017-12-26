@@ -1,7 +1,7 @@
 const config = {
     state: {
         appSett:
-            { areaUrl: 'https://funjia.github.io/demoManager/json/area.json' }
+            { areaUrl: '//funjia.github.io/demoManager/json/area.json' }
     },
 }
 
