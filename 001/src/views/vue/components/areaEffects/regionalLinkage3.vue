@@ -26,6 +26,11 @@ export default {
       county: ""
     };
   },
+  computed: {
+    appSett() {
+      return this.$store.state.config.appSett;
+    }
+  },
   // created: function () {
   //     this.default();
   // },
@@ -149,7 +154,7 @@ export default {
     },
     getAreaInfo() {
       let that = this;
-      $.getJSON("http://ogmy9zsil.bkt.clouddn.com/json/areaV1.json", res => {
+      $.getJSON(this.appSett['areaUrl'], res => {
         that.all = res;
         that.initComByPCA();
       });
